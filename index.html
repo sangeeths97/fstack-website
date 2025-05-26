@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page Title -->
+    <title>Fstack | Full Stack Developer Training Institute in Kerala</title>
+
+    <!-- SEO Meta -->
+    <meta
+      name="description"
+      content="Fstack offers expert-led Full Stack Developer courses in Kerala, including front-end, back-end, and mobile app development with hands-on projects, certification, and placement support."
+    />
+    <meta
+      name="keywords"
+      content="full stack developer course Kerala, web development course Kerala, MERN stack training Kerala, front-end development course, back-end development course, React training Kerala, Node.js course Kerala, flutter course Kerala, full stack course with placement, coding institute Kozhikode, job-oriented web development, Futura Software Technologies, Fstack training institute"
+    />
+    <meta name="author" content="Futura Software Technologies" />
+    <meta name="theme-color" content="#0168c7" />
+
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta
+      property="og:title"
+      content="Fstack | Full Stack Developer Training Institute in Kerala"
+    />
+    <meta
+      property="og:description"
+      content="Learn Full Stack Development from industry experts. React, Node.js, Flutter, hands-on projects, and placement support. Join Fstack today!"
+    />
+    <meta
+      property="og:image"
+      content="https://www.fstack.in/assets/og-image.jpg"
+    />
+    <meta property="og:url" content="https://www.fstack.in" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Fstack | Full Stack Developer Training Institute in Kerala"
+    />
+    <meta
+      name="twitter:description"
+      content="Expert-led Full Stack Developer course with projects, certification & placement support in Kerala. Enroll now at Fstack."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.fstack.in/assets/og-image.jpg"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="android-chrome-512x512.png"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles & Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              futuraPrimary: "#0168c7",
+              futuraDark: "#032E65",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Scripts -->
+    <script src="contact-form.js" defer></script>
+  </head>
+
+  <body class="bg-white text-gray-800">
+    <!-- Top Navigation Bar -->
+    <!-- Navbar -->
+    <nav
+      id="navbar"
+      class="bg-white text-futuraDark px-6 shadow-md sticky top-0 z-50 h-20 flex items-center"
+    >
+      <div class="max-w-7xl w-full flex justify-between items-center mx-auto">
+        <!-- Logo -->
+        <a href="#" class="flex items-center">
+          <img
+            src="assets/logo-final.png"
+            alt="Futura Logo"
+            class="h-10 w-auto"
+          />
+        </a>
+
+        <!-- Hamburger Icon (mobile only) -->
+        <button
+          id="navToggle"
+          class="md:hidden flex flex-col gap-1 w-8 h-8 justify-center items-center"
+        >
+          <span
+            class="block w-6 h-0.5 bg-futuraDark transition duration-300 transform origin-center"
+            id="line1"
+          ></span>
+          <span
+            class="block w-6 h-0.5 bg-futuraDark transition duration-300"
+            id="line2"
+          ></span>
+          <span
+            class="block w-6 h-0.5 bg-futuraDark transition duration-300 transform origin-center"
+            id="line3"
+          ></span>
+        </button>
+
+        <!-- Desktop Nav Links -->
+        <ul class="hidden md:flex space-x-6 text-sm font-medium">
+          <li><a href="#" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#video" class="nav-link">Intro</a></li>
+          <li><a href="/courses.html" class="nav-link">Courses</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Mobile Sidebar Menu -->
+      <div
+        id="mobileMenu"
+        class="fixed top-0 right-0 w-72 h-full bg-white text-futuraDark shadow-lg transform translate-x-full transition-transform duration-300 ease-in-out z-50 md:hidden flex flex-col px-6 pt-6 space-y-6 text-lg font-semibold"
+      >
+        <!-- Logo + Close Button -->
+        <div class="flex items-center justify-between mb-6">
+          <img
+            src="assets/logo-final.png"
+            alt="Futura Logo"
+            class="h-8 w-auto"
+          />
+          <button
+            onclick="closeMenu()"
+            class="text-3xl leading-none focus:outline-none"
+          >
+            &times;
+          </button>
+        </div>
+
+        <!-- Menu Items -->
+        <a href="#" class="nav-link" onclick="closeMenu()">Home</a>
+        <a href="#about" class="nav-link" onclick="closeMenu()">About</a>
+        <a href="#services" class="nav-link" onclick="closeMenu()">Services</a>
+        <a href="#video" class="nav-link" onclick="closeMenu()">Intro</a>
+        <a href="/courses.html" class="nav-link" onclick="closeMenu()"
+          >Courses</a
+        >
+        <a href="#faq" class="nav-link" onclick="closeMenu()">FAQ</a>
+        <a href="#contact" class="nav-link" onclick="closeMenu()">Contact</a>
+      </div>
+
+      <!-- Backdrop -->
+      <div
+        id="menuBackdrop"
+        class="fixed inset-0 bg-black bg-opacity-40 backdrop-blur-sm hidden z-40 md:hidden"
+        onclick="closeMenu()"
+      ></div>
+    </nav>
+
+    <!-- 🔧 Tailwind utility style for nav-link -->
+    <style>
+      .nav-link {
+        @apply relative inline-block py-2 after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-futuraPrimary after:transition-all after:duration-300 hover:after:w-full;
+      }
+    </style>
+
+    <!-- 🔄 JS for toggling sidebar menu -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const navToggle = document.getElementById("navToggle");
+        const mobileMenu = document.getElementById("mobileMenu");
+        const backdrop = document.getElementById("menuBackdrop");
+        const line1 = document.getElementById("line1");
+        const line2 = document.getElementById("line2");
+        const line3 = document.getElementById("line3");
+
+        navToggle.addEventListener("click", () => {
+          mobileMenu.classList.toggle("translate-x-full");
+          backdrop.classList.toggle("hidden");
+
+          // Animate hamburger to X
+          line1.classList.toggle("rotate-45");
+          line1.classList.toggle("translate-y-1.5");
+          line3.classList.toggle("-rotate-45");
+          line3.classList.toggle("-translate-y-1.5");
+          line2.classList.toggle("opacity-0");
+        });
+
+        window.closeMenu = () => {
+          mobileMenu.classList.add("translate-x-full");
+          backdrop.classList.add("hidden");
+
+          // Reset hamburger
+          line1.classList.remove("rotate-45", "translate-y-1.5");
+          line3.classList.remove("-rotate-45", "-translate-y-1.5");
+          line2.classList.remove("opacity-0");
+        };
+      });
+    </script>
+
+    <!-- Hero / Landing Section -->
+    <section
+      class="relative text-white text-left py-24 px-6 -mt-20 bg-cover bg-center min-h-screen flex items-center justify-center"
+    >
+      <!-- 🎨 Decorative Geometric Shapes -->
+      <div
+        class="absolute top-10 left-10 w-20 h-20 bg-futuraPrimary opacity-10 rounded-xl blur-xl z-0"
+      ></div>
+      <div
+        class="absolute top-0 right-24 w-32 h-32 bg-futuraPrimary opacity-20 rounded-full blur-2xl z-0"
+      ></div>
+      <div
+        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-white opacity-5 rotate-12 rounded-2xl blur-3xl z-0"
+      ></div>
+      <div
+        class="absolute bottom-10 left-10 w-4 h-40 bg-futuraPrimary opacity-10 rounded-full blur-sm z-0"
+      ></div>
+      <div
+        class="absolute bottom-10 right-10 w-28 h-28 bg-white opacity-10 rounded-full blur-2xl z-0"
+      ></div>
+      <div
+        class="absolute bottom-10 right-10 w-28 h-28 bg-white opacity-10 rounded-full blur-2xl z-0"
+      ></div>
+      <div
+        class="absolute bottom-10 right-10 w-28 h-28 bg-white opacity-10 rounded-full blur-2xl z-0"
+      ></div>
+      <div
+        class="absolute bottom-10 right-10 w-28 h-28 bg-white opacity-10 rounded-full blur-2xl z-0"
+      ></div>
+      <!-- <div
+      class="hidden md:block absolute -top-10 -right-10 w-64 h-64 bg-futuraPrimary opacity-5 rotate-45 rounded-lg blur-2xl z-0">
+    </div> -->
+
+      <!-- 👑 Main Content Wrapper -->
+      <div
+        class="relative z-10 max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center"
+      >
+        <!-- 🔤 Left Text Content -->
+        <div>
+          <p
+            class="text-4xl lg:text-6xl md:text-xl text-black/90 max-w-[100%] leading-tight tracking-tight mb-8 bg-gradient-to-r from-white via-futuraPrimary to-futuraDark text-black bg-clip-text animate-pulse font-landing"
+          >
+            Empowering future developers through practical full stack training
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a
+              href="#contact"
+              class="bg-futuraPrimary hover:bg-white border border-white hover:border-futuraPrimary text-white hover:bg-futuraPrimary hover:text-futuraPrimary transition-all duration-300 px-6 py-3 font-semibold rounded-lg shadow-md"
+            >
+              🚀 Get Started
+            </a>
+            <a
+              href="#video"
+              class="border border-futuraPrimary text-futuraPrimary hover:bg-futuraPrimary hover:text-white transition-all duration-300 px-6 py-3 font-semibold rounded-lg shadow-md"
+            >
+              ▶ Watch Intro
+            </a>
+          </div>
+        </div>
+
+        <!-- 🖼️ Image Display Block (Hidden on small screens) -->
+        <div class="hidden md:block relative w-full max-w-md mx-auto">
+          <!-- 🔳 SVG Net Pattern Background -->
+          <svg
+            class="absolute inset-0 w-full h-full z-0 opacity-20"
+            viewBox="0 0 400 400"
+            preserveAspectRatio="none"
+          >
+            <defs>
+              <pattern
+                id="gridPattern"
+                width="20"
+                height="20"
+                patternUnits="userSpaceOnUse"
+              >
+                <path
+                  d="M 20 0 L 0 0 0 20"
+                  fill="none"
+                  stroke="#38bdf8"
+                  stroke-width="0.5"
+                />
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#gridPattern)" />
+          </svg>
+
+          <!-- 🔵 Blobs Behind Image -->
+          <div
+            class="absolute -top-10 -left-10 w-32 h-32 bg-futuraPrimary opacity-10 rounded-full blur-2xl z-0"
+          ></div>
+          <div
+            class="absolute -bottom-10 -right-10 w-36 h-36 bg-white opacity-10 rounded-full blur-2xl z-0"
+          ></div>
+
+          <!-- 🖼️ Foreground Images -->
+          <div class="relative z-10">
+            <!-- Main Image -->
+            <div class="relative">
+              <img
+                src="assets/one.jpg"
+                alt="Full Stack Main"
+                class="w-full rounded-[2rem] shadow-xl"
+              />
+              <!-- <div
+                class="w-full h-full bg-futuraDark bg-opacity-50 absolute inset-0 rounded-[2rem]"
+              ></div> -->
+            </div>
+
+            <!-- Overlapping Secondary Image -->
+            <img
+              src="assets/one.jpg"
+              alt="Overlap Illustration"
+              class="absolute top-10 left-10 w-[100%] rounded-2xl shadow-lg border-4 border-white"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="px-6 py-20 bg-gray-50 pt-24">
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+      >
+        <!-- Left: Overlapping Image -->
+        <div class="relative w-full max-w-2xl mx-auto md:mx-0 h-[400px]">
+          <!-- Background offset image -->
+          <img
+            src="assets/common-image-1.jpg"
+            alt="CADD background"
+            class="absolute top-0 left-0 w-full h-full object-cover rounded-md opacity-40 z-0"
+            style="transform: translate(30px, 30px)"
+          />
+
+          <!-- Foreground main image -->
+          <img
+            src="assets/common-image-1.jpg"
+            alt="CADD training"
+            class="relative w-full h-full object-cover rounded-tr-[80px] rounded-md shadow-xl z-10"
+          />
+        </div>
+
+        <div class="text-center md:text-left px-4">
+          <h2 class="text-4xl font-bold text-futuraPrimary mb-6">About Us</h2>
+          <p class="text-lg leading-relaxed text-gray-700">
+            At <strong>Fstack</strong>, we don’t just teach—you build, break,
+            and master real-world applications through guided mentorship and
+            hands-on learning. Our goal is to turn curious minds into confident
+            creators by nurturing critical thinking, problem-solving, and the
+            grit to innovate.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="px-6 py-20 bg-white text-center">
+      <h2 class="text-4xl font-bold text-futuraPrimary mb-16">What We Offer</h2>
+
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"
+      >
+        <!-- Web Development -->
+        <div
+          class="group bg-white border border-gray-200 p-8 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300"
+          data-aos="fade-up"
+        >
+          <div class="flex justify-center mb-5">
+            <div
+              class="text-5xl text-futuraPrimary group-hover:scale-110 transition-transform duration-300"
+            >
+              💻
+            </div>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Web Development</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Master front-end and back-end skills to build responsive websites
+            with real-world use cases.
+          </p>
+        </div>
+
+        <!-- Mobile App Development -->
+        <div
+          class="group bg-white border border-gray-200 p-8 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div class="flex justify-center mb-5">
+            <div
+              class="text-5xl text-futuraPrimary group-hover:scale-110 transition-transform duration-300"
+            >
+              📱
+            </div>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Mobile App Development</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Learn to create fast and beautiful mobile apps for Android & iOS
+            using modern frameworks.
+          </p>
+        </div>
+
+        <!-- Interview Cracking -->
+        <div
+          class="group bg-white border border-gray-200 p-8 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="flex justify-center mb-5">
+            <div
+              class="text-5xl text-futuraPrimary group-hover:scale-110 transition-transform duration-300"
+            >
+              🎯
+            </div>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Interview Cracking Program</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Ace your interviews with mock sessions, HR prep, and personalized
+            feedback from industry mentors.
+          </p>
+        </div>
+
+        <!-- Problem Solving Skills -->
+        <div
+          class="group bg-white border border-gray-200 p-8 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <div class="flex justify-center mb-5">
+            <div
+              class="text-5xl text-futuraPrimary group-hover:scale-110 transition-transform duration-300"
+            >
+              🧠
+            </div>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Problem Solving Skills</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Build strong logic and algorithmic thinking through curated DSA and
+            coding challenge sessions.
+          </p>
+        </div>
+
+        <!-- Project Mentorship -->
+        <div
+          class="group bg-white border border-gray-200 p-8 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
+          <div class="flex justify-center mb-5">
+            <div
+              class="text-5xl text-futuraPrimary group-hover:scale-110 transition-transform duration-300"
+            >
+              🚀
+            </div>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Project Mentorship</h3>
+          <p class="text-gray-600 leading-relaxed">
+            Work on live projects with mentor support and get guided on how to
+            build a strong portfolio.
+          </p>
+        </div>
+
+        <!-- Career Support & Placement -->
+        <div
+          class="group bg-white border border-gray-200 p-8 rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300"
+          data-aos="fade-up"
+          data-aos-delay="500"
+        >
+          <div class="flex justify-center mb-5">
+            <div
+              class="text-5xl text-futuraPrimary group-hover:scale-110 transition-transform duration-300"
+            >
+              🎓
+            </div>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Career Support & Placement</h3>
+          <p class="text-gray-600 leading-relaxed">
+            From resume building to referrals—we’re with you until you land your
+            first or next developer job.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intro Video Section -->
+    <section
+      id="video"
+      class="relative px-6 py-24 bg-white text-white text-center overflow-hidden"
+    >
+      <!-- Decorative solid background shapes -->
+      <div
+        class="absolute top-0 left-0 w-2/3 h-64 bg-futuraPrimary rotate-3 origin-top-left z-0"
+      ></div>
+      <div
+        class="absolute bottom-0 right-0 w-2/3 h-64 bg-futuraPrimary -rotate-6 origin-bottom-right z-0"
+      ></div>
+      <div
+        class="absolute top-1/2 left-0 w-[300px] h-[300px] bg-futuraDark rounded-lg rotate-12 -translate-x-1/2 -translate-y-1/2 z-0"
+      ></div>
+      <div
+        class="absolute top-1/2 right-0 w-[300px] h-[300px] bg-futuraDark rounded-lg rotate-12 -translate-x-1/2 -translate-y-1/2 z-0"
+      ></div>
+
+      <!-- Heading -->
+      <h2
+        class="text-3xl md:text-4xl font-bold text-white mb-10 relative z-10 bg-clip-text"
+        style="-webkit-text-stroke: 1px #0168c7"
+      >
+        Watch Our Intro Video
+      </h2>
+
+      <!-- Video Placeholder -->
+      <div
+        class="relative z-10 max-w-4xl mx-auto overflow-hidden"
+        data-aos="zoom-in"
+      >
+        <div
+          class="relative bg-gray-800 rounded-xl aspect-video w-full shadow-lg overflow-hidden flex items-center justify-center"
+        >
+          <!-- Animated Shimmer -->
+          <div
+            class="absolute inset-0 animate-pulse bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 opacity-30 z-0"
+          ></div>
+
+          <!-- Not Found Icon -->
+          <div
+            class="relative z-10 flex flex-col items-center justify-center text-white"
+          >
+            <!-- Simple Video Icon with Slash -->
+            <div class="relative w-16 h-16">
+              <!-- Video shape -->
+              <div
+                class="absolute inset-0 border-2 border-white rounded-md"
+              ></div>
+              <!-- Slash line -->
+              <div
+                class="absolute left-1/2 top-1/2 w-full h-0.5 bg-red-500 rotate-45 -translate-x-1/2 -translate-y-1/2"
+              ></div>
+            </div>
+            <p class="mt-4 text-sm text-white/80 animate-bounce">
+              🎬 Video Coming Soon
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section
+      id="courses"
+      class="px-6 py-24 bg-futuraDark text-white text-center"
+    >
+      <h2 class="text-4xl font-bold mb-14">Our Courses</h2>
+
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
+      >
+        <!-- Web Front-End 1-->
+        <div
+          class="bg-white/5 border border-white/10 backdrop-blur-md p-8 rounded-2xl shadow-xl transition-transform hover:scale-105 duration-300"
+        >
+          <h3 class="text-2xl font-bold text-yellow-400 mb-2">
+            Front-End Developer I
+          </h3>
+          <p class="text-sm uppercase tracking-wider text-gray-300 mb-4">
+            HTML, CSS, JavaScript, Typescript, React
+          </p>
+          <ul class="text-gray-200 space-y-2 text-left">
+            <li>🕒 Duration: 8 Weeks</li>
+            <li>⏱️ Hours: 16</li>
+            <li>📜 Certificate Included</li>
+            <li>💼 Interview Prep + Certificate</li>
+          </ul>
+        </div>
+
+        <!-- Backend -->
+        <div
+          class="bg-white/5 border border-white/10 backdrop-blur-md p-8 rounded-2xl shadow-xl transition-transform hover:scale-105 duration-300"
+        >
+          <h3 class="text-2xl font-bold text-yellow-400 mb-2">
+            Backend Developer
+          </h3>
+          <p class="text-sm uppercase tracking-wider text-gray-300 mb-4">
+            Node.js, Express
+          </p>
+          <ul class="text-gray-200 space-y-2 text-left">
+            <li>🕒 Duration: 8 Weeks</li>
+            <li>⏱️ Hours: 16</li>
+            <li>📜 Certificate Included</li>
+            <li>💼 Interview Prep + Certificate</li>
+          </ul>
+        </div>
+
+        <!-- Full Stack (Highlighted) -->
+        <div
+          class="bg-white/5 border border-white/10 backdrop-blur-md p-8 rounded-2xl shadow-xl transition-transform hover:scale-105 duration-300"
+        >
+          <h3 class="text-2xl font-bold text-yellow-400 mb-2">
+            Full Stack Developer
+          </h3>
+          <p class="text-md tracking-wide uppercase text-white/90 mb-4">
+            Complete Front-End + Back-End Training
+          </p>
+          <ul class="text-white/90 space-y-2 text-left max-w-md mx-auto">
+            <li>🕒 Duration: 16 Weeks</li>
+            <li>⏱️ Hours: 32</li>
+            <li>🚀 Portfolio Projects</li>
+            <li>💼 Interview Prep + Certificate</li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex justify-center mt-10">
+        <a
+          href="/courses.html"
+          class="bg-futuraPrimary hover:bg-white text-white hover:bg-futuraPrimary hover:text-futuraPrimary transition-all duration-300 px-6 py-3 font-semibold rounded-lg shadow-md"
+        >
+          View all Courses
+        </a>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="px-6 py-20 bg-gray-50 text-center text-gray-900">
+      <h2 class="text-3xl md:text-4xl font-bold mb-12">
+        Frequently Asked Questions
+      </h2>
+
+      <div class="max-w-4xl mx-auto text-left space-y-4">
+        <!-- FAQ Item -->
+        <div class="border border-gray-200 rounded-lg bg-white shadow-sm">
+          <button
+            onclick="toggleFAQ(this)"
+            class="w-full px-6 py-4 flex justify-between items-center font-semibold text-left text-gray-800"
+          >
+            <span>Is this course suitable for beginners?</span>
+            <svg
+              class="w-5 h-5 transition-transform duration-300"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+          <div
+            class="answer overflow-hidden max-h-0 px-6 text-gray-600 transition-all duration-500 ease-in-out"
+          >
+            <p class="py-4">
+              Absolutely! Our curriculum is designed to help absolute beginners
+              become job-ready full stack developers by the end of the course.
+            </p>
+          </div>
+        </div>
+
+        <!-- Certificate -->
+        <div class="border border-gray-200 rounded-lg bg-white shadow-sm">
+          <button
+            onclick="toggleFAQ(this)"
+            class="w-full px-6 py-4 flex justify-between items-center font-semibold text-left text-gray-800"
+          >
+            <span>Will I receive a certificate after completion?</span>
+            <svg
+              class="w-5 h-5 transition-transform duration-300"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+          <div
+            class="answer overflow-hidden max-h-0 px-6 text-gray-600 transition-all duration-500 ease-in-out"
+          >
+            <p class="py-4">
+              Yes, you will receive a verifiable certificate on successful
+              completion of your course (Frontend, Backend, Mobile, or Full
+              Stack).
+            </p>
+          </div>
+        </div>
+
+        <!-- Placement Support -->
+        <div class="border border-gray-200 rounded-lg bg-white shadow-sm">
+          <button
+            onclick="toggleFAQ(this)"
+            class="w-full px-6 py-4 flex justify-between items-center font-semibold text-left text-gray-800"
+          >
+            <span>Do you offer placement assistance?</span>
+            <svg
+              class="w-5 h-5 transition-transform duration-300"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+          <div
+            class="answer overflow-hidden max-h-0 px-6 text-gray-600 transition-all duration-500 ease-in-out"
+          >
+            <p class="py-4">
+              Yes! We support students with resume reviews, mock interviews,
+              portfolio preparation, and job referrals after completing the
+              course.
+            </p>
+          </div>
+        </div>
+
+        <!-- Course Mode -->
+        <div class="border border-gray-200 rounded-lg bg-white shadow-sm">
+          <button
+            onclick="toggleFAQ(this)"
+            class="w-full px-6 py-4 flex justify-between items-center font-semibold text-left text-gray-800"
+          >
+            <span>Are the sessions live or recorded?</span>
+            <svg
+              class="w-5 h-5 transition-transform duration-300"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+          <div
+            class="answer overflow-hidden max-h-0 px-6 text-gray-600 transition-all duration-500 ease-in-out"
+          >
+            <p class="py-4">
+              We offer live instructor-led classes, and you’ll also get access
+              to session recordings for future reference and revision.
+            </p>
+          </div>
+        </div>
+
+        <!-- Tools / Software -->
+        <div class="border border-gray-200 rounded-lg bg-white shadow-sm">
+          <button
+            onclick="toggleFAQ(this)"
+            class="w-full px-6 py-4 flex justify-between items-center font-semibold text-left text-gray-800"
+          >
+            <span>What tools or software do I need?</span>
+            <svg
+              class="w-5 h-5 transition-transform duration-300"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+          <div
+            class="answer overflow-hidden max-h-0 px-6 text-gray-600 transition-all duration-500 ease-in-out"
+          >
+            <p class="py-4">
+              You just need a laptop and a good internet connection. We’ll guide
+              you to install VS Code, Node.js, Git, Flutter SDK, or any tools
+              relevant to your course track.
+            </p>
+          </div>
+        </div>
+
+        <!-- Content Access -->
+        <div class="border border-gray-200 rounded-lg bg-white shadow-sm">
+          <button
+            onclick="toggleFAQ(this)"
+            class="w-full px-6 py-4 flex justify-between items-center font-semibold text-left text-gray-800"
+          >
+            <span>Can I access course content after completion?</span>
+            <svg
+              class="w-5 h-5 transition-transform duration-300"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+          <div
+            class="answer overflow-hidden max-h-0 px-6 text-gray-600 transition-all duration-500 ease-in-out"
+          >
+            <p class="py-4">
+              Yes! You will have continued access to your course recordings,
+              materials, and project files even after completing your course.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accordion Script -->
+    <script>
+      function toggleFAQ(button) {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector("svg");
+
+        if (content.style.maxHeight && content.style.maxHeight !== "0px") {
+          content.style.maxHeight = "0px";
+          icon.classList.remove("rotate-180");
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+          icon.classList.add("rotate-180");
+        }
+      }
+    </script>
+
+    <!-- Combined Contact + Map (Overlapped, Stylish Form) -->
+    <section id="contact" class="relative w-full bg-gray-50 pb-0 pt-[85px]">
+      <!-- Floating Contact Form -->
+      <div class="relative z-20 max-w-2xl mx-auto -mb-28 px-6">
+        <div class="bg-white shadow-2xl rounded-3xl p-10 ring-1 ring-gray-200">
+          <h2 class="text-3xl font-bold text-futuraPrimary mb-6 text-center">
+            Ready to Get Started
+          </h2>
+          <!-- Contact Form -->
+          <form
+            id="contactForm"
+            onsubmit="return handleMailTo(event)"
+            class="grid grid-cols-1 gap-5"
+          >
+            <div>
+              <input
+                id="name"
+                type="text"
+                placeholder="Your Name"
+                required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-futuraPrimary"
+              />
+              <small class="text-red-600 text-sm hidden" id="nameError"
+                >Please enter your name.</small
+              >
+            </div>
+            <div>
+              <input
+                id="email"
+                type="email"
+                placeholder="Your Email"
+                required
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-futuraPrimary"
+              />
+              <small class="text-red-600 text-sm hidden" id="emailError"
+                >Please enter a valid email.</small
+              >
+            </div>
+            <div>
+              <input
+                id="subject"
+                type="text"
+                placeholder="Subject"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-futuraPrimary"
+              />
+            </div>
+            <div>
+              <textarea
+                id="message"
+                rows="4"
+                placeholder="Your Message"
+                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-futuraPrimary"
+              ></textarea>
+              <small class="text-red-600 text-sm hidden" id="messageError"
+                >Please enter your message.</small
+              >
+            </div>
+            <button
+              type="submit"
+              class="w-full bg-futuraPrimary text-white font-semibold py-3 rounded-lg hover:bg-opacity-90 transition"
+            >
+              Send Message
+            </button>
+            <p
+              id="formSuccess"
+              class="text-green-600 text-sm text-center hidden"
+            >
+              Message sent successfully!
+            </p>
+            <p id="formError" class="text-red-600 text-sm text-center hidden">
+              Something went wrong. Try again later.
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <!-- Full-Width Map (Background Layer) -->
+      <div class="w-full h-[500px] relative z-10">
+        <iframe
+          src="https://maps.google.com/maps?q=trivandrum&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          class="w-full h-full border-none"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-futuraDark text-white px-6 py-10">
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 items-start text-sm"
+      >
+        <!-- Logo & Description -->
+        <div>
+          <img
+            src="assets/logo-final.png"
+            alt="Fstack Logo"
+            class="h-10 mb-3"
+          />
+          <p class="text-gray-400">
+            Empowering future developers through practical full stack training
+            and real-world projects.
+          </p>
+        </div>
+
+        <!-- Social Links -->
+        <div>
+          <h4 class="font-semibold mb-3 text-white">Connect With Us</h4>
+          <div class="flex space-x-4">
+            <a
+              href="#"
+              target="_blank"
+              class="text-white hover:text-futuraPrimary transition"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              class="text-white hover:text-futuraPrimary transition"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              class="text-white hover:text-futuraPrimary transition"
+            >
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              class="text-white hover:text-futuraPrimary transition"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Info with FA Icons -->
+        <div>
+          <h4 class="font-semibold mb-3 text-white">Contact</h4>
+
+          <p class="text-gray-400 mb-2 flex items-start gap-2">
+            <i class="fas fa-map-marker-alt text-futuraPrimary mt-1"></i>
+            <span
+              >2nd Floor, Gokulam Towers, Link Road, Vadakara, Kozhikkode,
+              Kerala</span
+            >
+          </p>
+
+          <p class="text-gray-400 mb-2 flex items-start gap-2">
+            <i class="fas fa-phone-alt text-futuraPrimary mt-1"></i>
+            <span>
+              <a
+                href="tel:+919633114969"
+                class="hover:text-futuraPrimary transition"
+                >+91-9633114969</a
+              >,
+              <a
+                href="tel:+919446304969"
+                class="hover:text-futuraPrimary transition"
+                >+91-9446304969</a
+              >
+            </span>
+          </p>
+
+          <p class="text-gray-400 mb-2 flex items-start gap-2">
+            <i class="fas fa-envelope text-futuraPrimary mt-1"></i>
+            <a
+              href="mailto:futurasoftwaresolutions@gmail.com"
+              class="hover:text-futuraPrimary transition"
+            >
+              futurasoftwaresolutions@gmail.com
+            </a>
+          </p>
+
+          <p class="text-gray-400 flex items-start gap-2">
+            <i class="fas fa-globe text-futuraPrimary mt-1"></i>
+            <a
+              href="https://www.futurasoftwaresolutions.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:text-futuraPrimary transition"
+            >
+              www.futurasoftwaresolutions.in
+            </a>
+          </p>
+
+          <p class="text-gray-400 mt-4">
+            Parent Company: <br /><strong>Futura Software Technologies</strong>
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-10 text-center text-xs text-gray-500">
+        &copy; 2025 Futura Software Solutions. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
